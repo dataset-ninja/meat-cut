@@ -68,8 +68,10 @@ AUTHORS: Optional[List[str]] = [
 ]
 AUTHORS_CONTACTS: Optional[List[str]] = ["amccarren@dcu.ie", "Mark.Roantree@dcu.ie"]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = ["IE joint research group"]
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
+    "Big Data and Analytics Research Centre, Ireland"
+]
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://www.insight-centre.org/"]
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
