@@ -6,4 +6,4 @@ The **Meat Cut Image Dataset (BEEF)** dataset has been collected over a 3 week p
 * Topside Bullet muscle (product ID 20004)
 * Cap Off, Non-Pad, Blue Skin Only Topside muscle (product ID 20010).
 
-In this dataset, the ***background*** images have also been collected. There are more than 9000 images labeled with respective ***product id*** and ***plant id***. The ***background*** image name starts with 'background' and the ***beef*** image name starts with camera-screenshot. 
+In this dataset, the ***background*** images have also been collected. There are more than 9000 images labeled with respective ***product id*** and ***plant id***. The ***background*** image name starts with 'background' and the ***beef*** image name starts with 'camera-screenshot'. 
