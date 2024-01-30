@@ -10,7 +10,7 @@ The data collected for this project were from beef cuts taken from a Topside (i.
 
 <img src="https://github.com/dataset-ninja/meat-cut/assets/120389559/ff1e8b76-879b-4af6-bf09-248158f20b00" alt="image" width="1000">
 
-<span style="font-size: smaller; font-style: italic;">Topside cuts: five meat cut variations. (a) Cap Off Pear Off, PAD topside muscle (20001); (b) Cap off, Pear on topside muscle (20002); (c) Topside Heart muscle (20003); (d) Topside Bullet muscle (20004); and (e) Cap Off, Non-PAD, Blue Skin Only topside muscle (20010).</span>
+<span style="font-size: smaller; font-style: italic;">Topside cuts: five meat cut variations. (a) Cap Off Pear Off, PAD topside muscle (20001); (b) Cap off, Pear on topside muscle (20002); \(c\) Topside Heart muscle (20003); (d) Topside Bullet muscle (20004); and (e) Cap Off, Non-PAD, Blue Skin Only topside muscle (20010).</span>
 
 * A manual capture of the carcass identifier number, primal weight, and the time of arrival at the SOL scales.
 * The time and the id of the operator validating the meat cut image as well as the meat cut weight, meat cut label, and a photo image at the EOL scales were all captured on bespoke data capture software used as a form of data acquisition in the development of an Agri Data Warehouse.
