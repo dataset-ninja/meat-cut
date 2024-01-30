@@ -97,6 +97,9 @@ def convert_and_upload_supervisely_project(
             product_value = int(im_name[20:25])
             product = sly.Tag(product_meta, value=product_value)
             tags.append(product)
+            product_meta_none = product_to_meta.get(product_value)
+            product_none = sly.Tag(product_meta_none)
+            tags.append(product_none)
 
         timestamp = sly.Tag(timestamp_meta, value=timestamp_value)
         tags.append(timestamp)
@@ -112,6 +115,21 @@ def convert_and_upload_supervisely_project(
         return sly.Annotation(img_size=(img_height, img_wight), img_tags=tags)
 
     product_meta = sly.TagMeta("product id", sly.TagValueType.ANY_NUMBER)
+    product_20001_meta = sly.TagMeta("Cap Off Pear Off, PAD topside muscle", sly.TagValueType.NONE)
+    product_20004_meta = sly.TagMeta("Topside Bullet muscle", sly.TagValueType.NONE)
+    product_20003_meta = sly.TagMeta("Topside Heart muscle", sly.TagValueType.NONE)
+    product_20010_meta = sly.TagMeta(
+        "Cap Off, Non-PAD, Blue Skin Only topside muscle", sly.TagValueType.NONE
+    )
+    product_20002_meta = sly.TagMeta("Cap off, Pear on topside muscle", sly.TagValueType.NONE)
+    product_to_meta = {
+        20001: product_20001_meta,
+        20002: product_20002_meta,
+        20003: product_20003_meta,
+        20004: product_20004_meta,
+        20010: product_20010_meta,
+    }
+
     plant_meta = sly.TagMeta("plant id", sly.TagValueType.ANY_NUMBER)
     timestamp_meta = sly.TagMeta("timestamp", sly.TagValueType.ANY_STRING)
     background_meta = sly.TagMeta("background", sly.TagValueType.NONE)
@@ -120,7 +138,19 @@ def convert_and_upload_supervisely_project(
 
     project = api.project.create(workspace_id, project_name, change_name_if_conflict=True)
     meta = sly.ProjectMeta(
-        tag_metas=[product_meta, plant_meta, timestamp_meta, background_meta, beef_meta, date_meta],
+        tag_metas=[
+            product_meta,
+            product_20001_meta,
+            plant_meta,
+            timestamp_meta,
+            background_meta,
+            beef_meta,
+            date_meta,
+            product_20004_meta,
+            product_20003_meta,
+            product_20010_meta,
+            product_20002_meta,
+        ],
     )
     api.project.update_meta(project.id, meta.to_json())
 

@@ -24,7 +24,7 @@ LICENSE: License = License.CC_BY_4_0()
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Robotics(), Industry.Food()]
 CATEGORY: Category = Category.Robotics()
 
-CV_TASKS: List[CVTask] = [CVTask.Classification()]
+CV_TASKS: List[CVTask] = [CVTask.Classification(), CVTask.Identification()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.ImageLevel()]
 
 RELEASE_DATE: Optional[str] = "2021-04-19"  # e.g. "YYYY-MM-DD"
@@ -34,7 +34,7 @@ if RELEASE_DATE is None:
 HOMEPAGE_URL: str = "https://zenodo.org/records/4704391#.YlE-x39Bzmg"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = 13159738
+PREVIEW_IMAGE_ID: int = 13184039
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
 GITHUB_URL: str = "https://github.com/dataset-ninja/meat-cut"
@@ -53,7 +53,9 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
 # Use dict key to specify name for a button
-PAPER: Optional[Union[str, List[str], Dict[str, str]]] = None
+PAPER: Optional[
+    Union[str, List[str], Dict[str, str]]
+] = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8653946/"
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
 REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
 
@@ -75,13 +77,8 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://www.insight-centre
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
-    "image data description": [
-        "product id",
-        "plant id",
-        "timestamp",
-        "date",
-    ],
-    "__POSTTEXT__": "Additionally, every image marked with ***background*** or ***beef*** tag",
+    "image sets": ["background", "beef"],
+    "__POSTTEXT__": "Additionally, every image marked with ***product id***, ***plant id***, ***timestamp***, ***date***, ***cap off pear off, pad topside muscle***, ***topside bullet muscle***, ***topside heart muscle***, ***cap off, non-pad, blue skin only topside muscle***, ***cap off, pear on topside muscle*** tags",
 }
 TAGS: Optional[List[str]] = None
 

@@ -1,6 +1,8 @@
-from dataset_tools.templates import AnnotationType
-from src.settings import ANNOTATION_TYPES
 from typing import List
+
+from dataset_tools.templates import AnnotationType
+
+from src.settings import ANNOTATION_TYPES
 
 ###############################################################################
 # ! Set up values if you want to change default values of visualizations
@@ -59,7 +61,13 @@ CLASSES_PREVIEW_ROW_HEIGHT: int = None
 CLASSES_PREVIEW_PADDINGS: dict = None
 CLASSES_PREVIEW_ROWS: int = None
 CLASSES_PREVIEW_GAP: int = None
-CLASSES_PREVIEW_TAGS: List[str] = None
+CLASSES_PREVIEW_TAGS: List[str] = [
+    "Cap Off Pear Off, PAD topside muscle",
+    "Cap off, Pear on topside muscle",
+    "Topside Heart muscle",
+    "Topside Bullet muscle",
+    "Cap Off, Non-PAD, Blue Skin Only topside muscle",
+]
 # default {"top": "10%", "bottom": "10%", "left": "10%", "right": "10%"}
 # set % or px as string values (e.i. "10%" or "10px")
 ###############################################################
