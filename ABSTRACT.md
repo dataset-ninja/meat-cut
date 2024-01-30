@@ -52,4 +52,4 @@ When conducting image preprocessing, one generally aims to improve the predictio
 
 The frequency of meat cut 20002 was disproportionately low as it is not frequently harvested in this plant. Therefore, it was decided to use data augmentation to create artificial training samples for meat cut 20002 in order to improve the imbalanced nature of the dataset. As part of the augmentation process, transformations such as anticlockwise rotation, clockwise rotation, horizontal flip, vertical flip, noise addition, and blurring were implemented. These processes created 84 additional images for meat cut 20002 resulting in a final count of 98 images. 
 
-**Note**: the authors of the dataset did not provide a way to compare ***Weights*** with the corresponding image.
+**Note**: the authors of the dataset did not provide a way to compare <i>Weights</i> with the corresponding image.
