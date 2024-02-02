@@ -13,7 +13,7 @@ The data collected for this project were from beef cuts taken from a Topside (i.
 3) The EOL operator identified the meat cut using the data capture interface, ensuring the correct image was stored to disk and linked to the appropriate database entry containing the variables captured at both EOL and SOL points.
 4) After each meat cut was removed from the scales, an image of the empty scales was captured. This was done to help remove image noise (discussed later).
 
-<img src="https://github.com/dataset-ninja/meat-cut/assets/120389559/088e7ee4-9f56-4ea1-b3c1-ee6d2316b93b" alt="image" width="1000">
+<img src="https://github.com/dataset-ninja/meat-cut/assets/120389559/c03d32f9-14fb-453a-b357-0cf0f3a95534" alt="image" width="1000">
 
 <span style="font-size: smaller; font-style: italic;">Topside cuts: five meat cut variations. (a) Cap Off Pear Off, PAD topside muscle (20001); (b) Cap off, Pear on topside muscle (20002); \(c\) Topside Heart muscle (20003); (d) Topside Bullet muscle (20004); and (e) Cap Off, Non-PAD, Blue Skin Only topside muscle (20010).</span>
 
