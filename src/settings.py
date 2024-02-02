@@ -21,8 +21,8 @@ HIDE_DATASET = True  # set False when 100% sure about repo quality
 # * After uploading to instance ##
 ##################################
 LICENSE: License = License.CC_BY_4_0()
-APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Robotics(), Industry.Food()]
-CATEGORY: Category = Category.Robotics()
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Food()]
+CATEGORY: Category = Category.Food()
 
 CV_TASKS: List[CVTask] = [CVTask.Classification(), CVTask.Identification()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.ImageLevel()]
@@ -43,9 +43,9 @@ GITHUB_URL: str = "https://github.com/dataset-ninja/meat-cut"
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[
-    Union[str, dict]
-] = "https://zenodo.org/records/4704391/files/Image%20Dataset.zip?download=1"
+DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = (
+    "https://zenodo.org/records/4704391/files/Image%20Dataset.zip?download=1"
+)
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
@@ -53,9 +53,9 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
 # Use dict key to specify name for a button
-PAPER: Optional[
-    Union[str, List[str], Dict[str, str]]
-] = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8653946/"
+PAPER: Optional[Union[str, List[str], Dict[str, str]]] = (
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8653946/"
+)
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
 REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
 
@@ -78,7 +78,14 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://www.insight-centre
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
     "image sets": ["background", "beef"],
-    "__POSTTEXT__": "Additionally, every image marked with ***product id***, ***plant id***, ***timestamp***, ***date***, ***cap off pear off, pad topside muscle***, ***topside bullet muscle***, ***topside heart muscle***, ***cap off, non-pad, blue skin only topside muscle***, ***cap off, pear on topside muscle*** tags",
+    "meat cuts": [
+        "cap off pear off, pad topside muscle",
+        "topside bullet muscle",
+        "topside heart muscle",
+        "cap off, non-pad, blue skin only topside muscle",
+        "cap off, pear on topside muscle",
+    ],
+    "__POSTTEXT__": "Additionally, every image marked with ***product id***, ***plant id***, ***timestamp***, ***date*** tags",
 }
 TAGS: Optional[List[str]] = None
 
