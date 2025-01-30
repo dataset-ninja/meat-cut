@@ -1,6 +1,6 @@
 Dataset **Meat Cut** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://www.dropbox.com/scl/fi/0b8r1wkxovirt3osa69ut/meat-cut-DatasetNinja.tar?rlkey=t3demzmmhcub5uhjcwtvbts9y&dl=1)
+ [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogImZzOi8vYXNzZXRzLzM0MTBfTWVhdCBDdXQvbWVhdC1jdXQtRGF0YXNldE5pbmphLnRhciIsICJzaWciOiAiWkd5UjMzTGVmcUJwMjRFOUloblhuMVBVVzAxU0pnUFdTemc3azVWL3RNVT0ifQ==)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
